@@ -112,37 +112,39 @@ function Recruiting() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <h4 className={styles.detailsTitle}>{CLUB_INFO.fullName}</h4>
-            <p className={styles.detailsSubtitle}>
-              연세대학교 신촌캠퍼스 학생회관 3층, 301-335
-            </p>
+            <div className={styles.detailsInner}>
+              <h4 className={styles.detailsTitle}>{CLUB_INFO.fullName}</h4>
+              <p className={styles.detailsSubtitle}>
+                연세대학교 신촌캠퍼스 학생회관 3층, 301-335
+              </p>
 
-            <div className={styles.detailsGrid}>
-              <div className={styles.detailItem}>
-                <div className={styles.detailIconWrap}>
-                  <MailIcon />
+              <div className={styles.detailsGrid}>
+                <div className={styles.detailItem}>
+                  <div className={styles.detailIconWrap}>
+                    <MailIcon />
+                  </div>
+                  <span className={styles.detailLink}>{CLUB_INFO.email}</span>
                 </div>
-                <span className={styles.detailLink}>{CLUB_INFO.email}</span>
               </div>
-            </div>
 
-            {/* Social icons row */}
-            <div className={styles.detailsSocial}>
-              {SOCIAL_LINKS.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.detailsSocialLink}
-                  aria-label={`${link.name} 방문`}
-                >
-                  {link.name === 'Instagram' && <InstagramIcon size={20} />}
-                  {link.name === 'YouTube' && <YouTubeIcon />}
-                  {link.name === 'LinkedIn' && <LinkedInIcon />}
-                  {link.name === 'X' && <XIcon />}
-                </a>
-              ))}
+              {/* Social icons row */}
+              <div className={styles.detailsSocial}>
+                {SOCIAL_LINKS.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.detailsSocialLink}
+                    aria-label={`${link.name} 방문`}
+                  >
+                    {link.name === 'Instagram' && <InstagramIcon size={20} />}
+                    {link.name === 'YouTube' && <YouTubeIcon />}
+                    {link.name === 'LinkedIn' && <LinkedInIcon />}
+                    {link.name === 'X' && <XIcon />}
+                  </a>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
