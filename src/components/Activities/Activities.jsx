@@ -14,10 +14,9 @@ const fadeUp = {
 };
 
 function Activities() {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('regular');
 
   const filteredActivities = useMemo(() => {
-    if (activeFilter === 'all') return ACTIVITIES;
     return ACTIVITIES.filter((a) => a.category === activeFilter);
   }, [activeFilter]);
 

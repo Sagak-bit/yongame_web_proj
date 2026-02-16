@@ -29,7 +29,6 @@ export const DEPARTMENTS = [
 
 // ===== Activity Categories =====
 export const ACTIVITY_CATEGORIES = [
-  { id: 'all', label: '전체' },
   { id: 'regular', label: '정규활동' },
   { id: 'departmental', label: '국별 활동' },
   { id: 'project', label: '프로젝트' },

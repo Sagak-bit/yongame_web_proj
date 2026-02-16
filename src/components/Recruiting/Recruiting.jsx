@@ -22,134 +22,125 @@ function Recruiting() {
   );
 
   return (
-    <section className={styles.section} id="recruiting" aria-label="Recruiting">
-      <div className="section-container">
-        {/* Header */}
-        <motion.div
-          className={styles.header}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <motion.h2 className={styles.tag} variants={fadeUp} custom={0}>
-            Recruiting
-          </motion.h2>
-        </motion.div>
-
-        {/* Body: single column centered */}
-        <div className={styles.body}>
-          {/* Instagram embed */}
+    <>
+      <section className={styles.section} id="recruiting" aria-label="Recruiting">
+        <div className="section-container">
           <motion.div
-            className={styles.instagramWrapper}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            className={styles.header}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
           >
-            {!iframeError ? (
-              <div className={styles.iframeContainer}>
-                <iframe
-                  src="https://www.instagram.com/yonsei_yongame/embed"
-                  className={styles.iframe}
-                  title="연겜 인스타그램"
-                  loading="lazy"
-                  allowTransparency="true"
-                  onError={() => setIframeError(true)}
-                />
-              </div>
-            ) : (
-              <InstagramFallback />
-            )}
+            <motion.h2 className={styles.tag} variants={fadeUp} custom={0}>
+              Recruiting
+            </motion.h2>
           </motion.div>
 
-          {/* Description + CTA */}
-          <motion.div
-            className={styles.ctaArea}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <p className={styles.ctaDesc}>
-              리크루팅에 관한 추가설명 / 지원 관련 설명
-            </p>
+          <div className={styles.body}>
+            <motion.div
+              className={styles.instagramWrapper}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              {!iframeError ? (
+                <div className={styles.iframeContainer}>
+                  <iframe
+                    src="https://www.instagram.com/yonsei_yongame/embed"
+                    className={styles.iframe}
+                    title="연겜 인스타그램"
+                    loading="lazy"
+                    allowTransparency="true"
+                    onError={() => setIframeError(true)}
+                  />
+                </div>
+              ) : (
+                <InstagramFallback />
+              )}
+            </motion.div>
 
-            {isActive ? (
-              <a
-                href={RECRUITMENT.formUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.ctaButton}
-              >
-                지금 지원하기
-              </a>
-            ) : (
-              <div className={styles.ctaDisabledArea}>
-                <button className={styles.ctaButtonDisabled} disabled>
-                  지금 지원하기
-                </button>
-                <p className={styles.ctaMicrocopy}>
-                  현재 모집 기간이 아닙니다.{' '}
-                  <a
-                    href={RECRUITMENT.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.ctaLink}
-                  >
-                    {RECRUITMENT.instagramHandle}
-                  </a>
-                  을 팔로우하고 다음 모집 소식을 받아보세요!
-                </p>
-              </div>
-            )}
-          </motion.div>
-
-          {/* Details footer section */}
-          <motion.div
-            className={styles.details}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <div className={styles.detailsInner}>
-              <h4 className={styles.detailsTitle}>{CLUB_INFO.fullName}</h4>
-              <p className={styles.detailsSubtitle}>
-                연세대학교 신촌캠퍼스 학생회관 3층, 301-335
+            <motion.div
+              className={styles.ctaArea}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <p className={styles.ctaDesc}>
+                리크루팅에 관한 추가설명 / 지원 관련 설명
               </p>
 
-              <div className={styles.detailsGrid}>
-                <div className={styles.detailItem}>
-                  <div className={styles.detailIconWrap}>
-                    <MailIcon />
-                  </div>
-                  <span className={styles.detailLink}>{CLUB_INFO.email}</span>
+              {isActive ? (
+                <a
+                  href={RECRUITMENT.formUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  지금 지원하기
+                </a>
+              ) : (
+                <div className={styles.ctaDisabledArea}>
+                  <button className={styles.ctaButtonDisabled} disabled>
+                    지금 지원하기
+                  </button>
+                  <p className={styles.ctaMicrocopy}>
+                    현재 모집 기간이 아닙니다.{' '}
+                    <a
+                      href={RECRUITMENT.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.ctaLink}
+                    >
+                      {RECRUITMENT.instagramHandle}
+                    </a>
+                    을 팔로우하고 다음 모집 소식을 받아보세요!
+                  </p>
                 </div>
-              </div>
-
-              {/* Social icons row */}
-              <div className={styles.detailsSocial}>
-                {SOCIAL_LINKS.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.detailsSocialLink}
-                    aria-label={`${link.name} 방문`}
-                  >
-                    {link.name === 'Instagram' && <InstagramIcon size={20} />}
-                    {link.name === 'YouTube' && <YouTubeIcon />}
-                    {link.name === 'LinkedIn' && <LinkedInIcon />}
-                    {link.name === 'X' && <XIcon />}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </motion.div>
+              )}
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Details footer - outside section for full width */}
+      <footer className={styles.details}>
+        <div className={styles.detailsInner}>
+          <h4 className={styles.detailsTitle}>{CLUB_INFO.fullName}</h4>
+          <p className={styles.detailsSubtitle}>
+            연세대학교 신촌캠퍼스 학생회관 3층, 301-335
+          </p>
+
+          <div className={styles.detailsGrid}>
+            <div className={styles.detailItem}>
+              <div className={styles.detailIconWrap}>
+                <MailIcon />
+              </div>
+              <span className={styles.detailLink}>{CLUB_INFO.email}</span>
+            </div>
+          </div>
+
+          <div className={styles.detailsSocial}>
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.detailsSocialLink}
+                aria-label={`${link.name} 방문`}
+              >
+                {link.name === 'Instagram' && <InstagramIcon size={20} />}
+                {link.name === 'YouTube' && <YouTubeIcon />}
+                {link.name === 'LinkedIn' && <LinkedInIcon />}
+                {link.name === 'X' && <XIcon />}
+              </a>
+            ))}
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
 

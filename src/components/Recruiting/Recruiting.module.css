@@ -204,9 +204,7 @@
 
 /* ===== Details Section (footer-like, full width, left-aligned) ===== */
 .details {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: var(--space-3xl);
+  width: 100%;
   padding: var(--space-2xl) var(--space-lg);
   background-color: #3E3E45;
 }
