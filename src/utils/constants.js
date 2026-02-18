@@ -204,12 +204,12 @@ export const ACTIVITIES = [
       '영상 편집, 기초부터 실전 꿀팁까지 제대로 배우고 싶다면? 프리미어 프로 스터디에서 툴 마스터는 물론, 서로의 피드백을 통해 퀄리티 높은 나만의 포트폴리오를 완성해 보세요!',
     color: '#8B5CF6',
     dept: '미디어국',
-    image: 'images/media/media-1.webp',
+    image: 'images/media/media-2.webp',
   },
   {
     id: 13,
     title: '연겜소',
-    image: 'images/media/media-2.webp',
+    image: 'images/media/media-1.webp',
     category: 'departmental',
     description:
       '총 상금과 자존심을 건 쇼츠 조회수 대결! 팀원들과 함께 최신 게임 영상을 제작해 푸짐한 상품을 쟁취하세요. 1분 미만의 짧은 승부, 여러분의 기획력과 편집 센스를 보여줄 때입니다.',
