@@ -19,11 +19,13 @@ export const ABOUT_SECTIONS = [
         title: '게임 이슈 스터디',
         description:
           '게임과 관련된 주제를 자유롭게 선정하여 매주 정기적으로 발제 및 토론을 진행합니다. 게임 이슈 스터디를 통해 게임 관련 분석과 견해를 나눌 수 있습니다.',
+        image: 'images/planning/game_issue.webp',
       },
       {
         title: '정규활동 기획',
         description:
           '정규활동을 직접 기획해보는 활동을 통해 아이디어를 현실화시켜보는 경험을 할 수 있습니다. 성취감과 실무 감각을 기를 수 있는 기회입니다.',
+        image: 'images/planning/regular_activity.webp',
       },
     ],
   },
@@ -88,93 +90,146 @@ export const ACTIVITY_CATEGORIES = [
 
 // ===== Activities Data =====
 export const ACTIVITIES = [
+  // --- 정규활동 ---
   {
     id: 1,
-    title: '연낳대',
-    category: 'project',
+    title: '개강총회',
+    category: 'regular',
     description:
-      '연세대학교 내 최대 규모 교내 e스포츠 대회. 리그 오브 레전드, 발로란트 등 다양한 종목으로 진행됩니다.',
+      '연겜 한 학기의 시작을 알리는 활동입니다. 이번 학기 임원진을 소개하고 및 회칙 개정안을 고지합니다.',
     color: '#1766FF',
   },
   {
     id: 2,
-    title: '이낳대',
-    category: 'project',
+    title: '겜독',
+    category: 'regular',
     description:
-      '이화여대와 함께하는 연합 e스포츠 대회. 양교 학생들의 열정이 가득한 교류전입니다.',
+      '"게임을 인문학적으로 읽다" — 게임문화 동아리 연겜의 대표적인 게임 탐구 활동입니다. 참여자들은 게임을 사전에 플레이한 이후 강연자의 해당 게임과 관련한 강연을 듣고 토론에 참여합니다. 게임문화 동아리로서 다른 게임 동아리와 차별화되는 연겜의 가장 핵심적인 활동입니다.',
     color: '#8B5CF6',
   },
   {
     id: 3,
-    title: '연토브리그',
-    category: 'project',
+    title: '조겜대',
+    category: 'regular',
     description:
-      '연세대학교 교내 토너먼트 리그. 시즌제로 운영되며 매 학기 새로운 챔피언이 탄생합니다.',
+      '"조구만 게임 대회"는 팀을 구성하여 소규모 게임들을 플레이하며 경쟁하는 가벼운 친목 활동입니다.',
     color: '#EC4899',
   },
   {
     id: 4,
-    title: 'YGF',
-    category: 'project',
+    title: '기획국 주관활동',
+    category: 'regular',
     description:
-      'Yongame Game Festival. 연겜이 주최하는 게임 문화 축제로, 다양한 이벤트와 부스가 운영됩니다.',
+      '게임과 관련된 자유로운 아이디어를 바탕으로 기획국이 주도하여 콘텐츠를 기획·운영하는 활동입니다. 기획 아이디어 구상, 기획서 작성, 기획 구체화 회의 진행, 실제 활동 제작 및 진행까지 A부터 Z까지 전 과정을 기획국에서 전담하여 진행합니다.',
     color: '#F59E0B',
   },
   {
     id: 5,
-    title: '연발컵',
-    category: 'project',
+    title: '뷰잉파티',
+    category: 'regular',
     description:
-      '연세대학교 발로란트 컵. 발로란트 종목에 특화된 교내 대회입니다.',
-    color: '#EF4444',
-  },
-  {
-    id: 6,
-    title: '사연전',
-    category: 'project',
-    description:
-      '4개 대학 연합 e스포츠 대회. 여러 대학의 게임 동아리들이 모여 실력을 겨루는 대규모 교류전입니다.',
+      '부원들과 함께 한 곳에 모여 이스포츠 경기를 시청하는 활동입니다.',
     color: '#10B981',
   },
   {
-    id: 7,
-    title: '정기 게임 모임',
+    id: 6,
+    title: '종강총회',
     category: 'regular',
     description:
-      '매주 정기적으로 모여 다양한 게임을 함께 즐기는 시간! 보드게임부터 PC 게임까지 장르를 가리지 않습니다.',
+      '한 학기를 마무리하며 다음 학기 임원진을 선출하고 방학학기 활동을 안내합니다.',
     color: '#6366F1',
   },
+  // --- 국별 활동 ---
   {
-    id: 8,
-    title: '게임 문화 세미나',
-    category: 'regular',
-    description:
-      '게임 산업 트렌드, e스포츠 생태계, 게임 디자인 등 게임 문화 전반에 대해 탐구하는 세미나입니다.',
-    color: '#0EA5E9',
-  },
-  {
-    id: 9,
-    title: '연겜 매거진',
-    category: 'departmental',
-    description:
-      '홍보국에서 제작하는 연겜의 공식 매거진. 게임 문화 트렌드, 부원 인터뷰, 대회 리뷰 등 다양한 콘텐츠를 디자인하고 발행합니다.',
-    color: '#F97316',
-  },
-  {
-    id: 10,
+    id: 7,
     title: '게임 이슈 스터디',
     category: 'departmental',
     description:
-      '기획국에서 주관하는 게임 이슈 스터디. 최신 게임 산업 트렌드, e스포츠 이슈 등을 함께 탐구하고 토론합니다.',
+      '게임과 관련된 주제를 자유롭게 선정하여 매주 정기적으로 발제 및 토론을 진행합니다. 게임 이슈 스터디를 통해 게임 관련 분석과 견해를 나눌 수 있습니다.',
     color: '#14B8A6',
+    dept: '기획국',
+  },
+  {
+    id: 8,
+    title: '정규활동 기획',
+    category: 'departmental',
+    description:
+      '정규활동을 직접 기획해보는 활동을 통해 아이디어를 현실화시켜보는 경험을 할 수 있습니다. 성취감과 실무 감각을 기를 수 있는 기회입니다.',
+    color: '#0EA5E9',
+    dept: '기획국',
+  },
+  {
+    id: 9,
+    title: '카드뉴스',
+    category: 'departmental',
+    description:
+      '누가 연겜의 활동을 묻거든 고개를 들어 카드뉴스를 보게 하라. 홍보국은 매주 연겜에서 진행되는 활동을 카드뉴스로 제작하고 있습니다. 연겜의 얼굴을 빛내주세요!',
+    color: '#F97316',
+    dept: '홍보국',
+  },
+  {
+    id: 10,
+    title: '연겜 매거진',
+    category: 'departmental',
+    description:
+      '평소 하고 싶었던 게임 이야기를 공유해보자! 게임과 관련된 주제를 선정하여 자유로운 형식으로 제작하는 매거진 활동을 진행하고 있습니다.',
+    color: '#EF4444',
+    dept: '홍보국',
   },
   {
     id: 11,
+    title: '포토샵 스터디',
+    category: 'departmental',
+    description:
+      '포토샵을 처음 하신다고요? 그런 당신을 위해 준비했습니다! 매주 진행하는 포토샵 스터디를 통해 기본적인 기능을 배우고 나만의 디자인을 만들어보세요!',
+    color: '#EC4899',
+    dept: '홍보국',
+  },
+  {
+    id: 12,
+    title: '프리미어 프로 스터디',
+    category: 'departmental',
+    description:
+      '영상 편집, 기초부터 실전 꿀팁까지 제대로 배우고 싶다면? 프리미어 프로 스터디에서 툴 마스터는 물론, 서로의 피드백을 통해 퀄리티 높은 나만의 포트폴리오를 완성해 보세요!',
+    color: '#8B5CF6',
+    dept: '미디어국',
+  },
+  {
+    id: 13,
     title: '연겜소',
     category: 'departmental',
     description:
-      '미디어국에서 제작하는 연겜의 영상 콘텐츠 시리즈. 대회 하이라이트, 활동 브이로그, 부원 인터뷰 등 연겜의 순간들을 영상으로 기록합니다.',
-    color: '#8B5CF6',
+      '총 상금과 자존심을 건 쇼츠 조회수 대결! 팀원들과 함께 최신 게임 영상을 제작해 푸짐한 상품을 쟁취하세요. 1분 미만의 짧은 승부, 여러분의 기획력과 편집 센스를 보여줄 때입니다.',
+    color: '#6366F1',
+    dept: '미디어국',
+  },
+  // --- 프로젝트 ---
+  {
+    id: 14,
+    title: '연발컵',
+    category: 'project',
+    description:
+      '연세대학교 발로란트 챔피언을 가리는 교내 최대의 발로란트 대회입니다. 연겜에서 기획하고 진행하며, 우승팀에게는 명예와 상금이 주어집니다.',
+    color: '#EF4444',
+    image: 'images/project/yonbal.webp',
+  },
+  {
+    id: 15,
+    title: '연겜 전시회',
+    category: 'project',
+    description:
+      '연세대학교 내에서 진행한 연겜 전시회입니다. 1년동안 게임이 담고 있는 인문학과 철학에 대해 탐구한 결과물들을 전시회라는 형태로 대중들에게 선보입니다.',
+    color: '#F59E0B',
+    image: 'images/project/exhibition.webp',
+  },
+  {
+    id: 16,
+    title: '사이버 정기전',
+    category: 'project',
+    description:
+      '연세대학교와 고려대학교의 스포츠 정기전을 사이버 공간으로 옮긴 대회입니다. 여러 이스포츠 종목을 바탕으로 연세대학교와 고려대학교의 게임 실력의 자웅을 겨룹니다.',
+    color: '#1766FF',
+    image: 'images/project/cyber.webp',
   },
 ];
 
@@ -187,11 +242,22 @@ export const NAV_LINKS = [
 
 // ===== Recruitment Config =====
 export const RECRUITMENT = {
-  startDate: '2026-03-01',
-  endDate: '2026-03-21',
-  formUrl: '#',
+  startDate: '2026-02-14',
+  endDate: '2026-02-26',
+  formUrl: 'https://tally.so/r/0QOypZ',
   instagramHandle: '@yonsei_yongame',
   instagramUrl: 'https://www.instagram.com/yonsei_yongame/',
+  schedule: [
+    { icon: '📢', label: '지원서 마감', date: '2026년 2월 26일(목) 23시 59분' },
+    { icon: '📢', label: '(대면) 면접 기간', date: '2026년 2월 28일(토) ~ 3월 1일(일)' },
+    { icon: '📢', label: '합격자 발표', date: '2026년 3월 2일(월)' },
+    { icon: '📢', label: '첫 정규활동', date: '2026년 3월 4일(수) 18시 30분' },
+    { icon: '📢', label: 'MT', date: '2026년 3월 21일(토) ~ 3월 22일(일)' },
+  ],
+  eligibility: [
+    '2학기 이상 활동 가능한 학부생',
+    '매주 수요일 오후 6시 30분 정규활동에 참여 가능한 학부생',
+  ],
 };
 
 // ===== Social Links =====

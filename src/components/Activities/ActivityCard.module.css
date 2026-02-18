@@ -20,7 +20,18 @@
   transition: filter 150ms ease, transform 150ms ease;
 }
 
-.card:hover .bg {
+.bgImage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 150ms ease, transform 150ms ease;
+}
+
+.card:hover .bg,
+.card:hover .bgImage {
   filter: blur(8px) brightness(0.6);
   transform: scale(1.05);
 }

@@ -111,7 +111,7 @@
   gap: var(--space-xl);
   text-align: center;
   width: 100%;
-  max-width: 560px;
+  max-width: 640px;
 }
 
 .ctaContent {
@@ -135,6 +135,92 @@
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.55);
   max-width: 45ch;
+}
+
+/* ===== Recruitment Info ===== */
+.recruitInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  width: 100%;
+  text-align: left;
+}
+
+.scheduleTitle {
+  font-family: var(--font-heading-kr);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-neutral-100);
+  text-align: center;
+}
+
+.scheduleList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.scheduleItem {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+.scheduleIcon {
+  flex-shrink: 0;
+}
+
+.scheduleLabel {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
+
+.scheduleDate {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.eligibility {
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.eligibilityTitle {
+  font-family: var(--font-heading-kr);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-neutral-100);
+  margin-bottom: var(--space-sm);
+}
+
+.eligibilityList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.eligibilityItem {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.eligibilityItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.35);
 }
 
 /* CTA Button - Active (outlined pill style matching prototype) */

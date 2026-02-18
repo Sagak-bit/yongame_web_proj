@@ -67,9 +67,27 @@ function Recruiting() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <p className={styles.ctaDesc}>
-                리크루팅에 관한 추가설명 / 지원 관련 설명
-              </p>
+              <div className={styles.recruitInfo}>
+                <h3 className={styles.scheduleTitle}>💙💙💙 15기 모집 일정 💙💙💙</h3>
+                <ul className={styles.scheduleList}>
+                  {RECRUITMENT.schedule.map((item, i) => (
+                    <li key={i} className={styles.scheduleItem}>
+                      <span className={styles.scheduleIcon}>{item.icon}</span>
+                      <span className={styles.scheduleLabel}>{item.label}:</span>
+                      <span className={styles.scheduleDate}>{item.date}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className={styles.eligibility}>
+                  <h4 className={styles.eligibilityTitle}>⚠️ 지원 자격</h4>
+                  <ul className={styles.eligibilityList}>
+                    {RECRUITMENT.eligibility.map((item, i) => (
+                      <li key={i} className={styles.eligibilityItem}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
 
               {isActive ? (
                 <a
