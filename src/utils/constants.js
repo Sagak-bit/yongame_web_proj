@@ -98,6 +98,7 @@ export const ACTIVITIES = [
     description:
       '연겜 한 학기의 시작을 알리는 활동입니다. 이번 학기 임원진을 소개하고 및 회칙 개정안을 고지합니다.',
     color: '#1766FF',
+    image: 'images/regular/opening_meeting.webp',
   },
   {
     id: 2,
@@ -106,6 +107,7 @@ export const ACTIVITIES = [
     description:
       '"게임을 인문학적으로 읽다" — 게임문화 동아리 연겜의 대표적인 게임 탐구 활동입니다. 참여자들은 게임을 사전에 플레이한 이후 강연자의 해당 게임과 관련한 강연을 듣고 토론에 참여합니다. 게임문화 동아리로서 다른 게임 동아리와 차별화되는 연겜의 가장 핵심적인 활동입니다.',
     color: '#8B5CF6',
+    image: 'images/regular/gamedoc.webp',
   },
   {
     id: 3,
@@ -114,6 +116,7 @@ export const ACTIVITIES = [
     description:
       '"조구만 게임 대회"는 팀을 구성하여 소규모 게임들을 플레이하며 경쟁하는 가벼운 친목 활동입니다.',
     color: '#EC4899',
+    image: 'images/regular/joegamedae.webp',
   },
   {
     id: 4,
@@ -122,6 +125,7 @@ export const ACTIVITIES = [
     description:
       '게임과 관련된 자유로운 아이디어를 바탕으로 기획국이 주도하여 콘텐츠를 기획·운영하는 활동입니다. 기획 아이디어 구상, 기획서 작성, 기획 구체화 회의 진행, 실제 활동 제작 및 진행까지 A부터 Z까지 전 과정을 기획국에서 전담하여 진행합니다.',
     color: '#F59E0B',
+    image: 'images/regular/planning_organized.webp',
   },
   {
     id: 5,
@@ -130,6 +134,7 @@ export const ACTIVITIES = [
     description:
       '부원들과 함께 한 곳에 모여 이스포츠 경기를 시청하는 활동입니다.',
     color: '#10B981',
+    image: 'images/regular/viewing_party.webp',
   },
   {
     id: 6,
@@ -138,6 +143,7 @@ export const ACTIVITIES = [
     description:
       '한 학기를 마무리하며 다음 학기 임원진을 선출하고 방학학기 활동을 안내합니다.',
     color: '#6366F1',
+    image: 'images/regular/ending_meeting.webp',
   },
   // --- 국별 활동 ---
   {
@@ -148,6 +154,7 @@ export const ACTIVITIES = [
       '게임과 관련된 주제를 자유롭게 선정하여 매주 정기적으로 발제 및 토론을 진행합니다. 게임 이슈 스터디를 통해 게임 관련 분석과 견해를 나눌 수 있습니다.',
     color: '#14B8A6',
     dept: '기획국',
+    image: 'images/planning/game_issue.webp',
   },
   {
     id: 8,
@@ -157,6 +164,7 @@ export const ACTIVITIES = [
       '정규활동을 직접 기획해보는 활동을 통해 아이디어를 현실화시켜보는 경험을 할 수 있습니다. 성취감과 실무 감각을 기를 수 있는 기회입니다.',
     color: '#0EA5E9',
     dept: '기획국',
+    image: 'images/planning/regular_activity.webp',
   },
   {
     id: 9,
@@ -166,6 +174,7 @@ export const ACTIVITIES = [
       '누가 연겜의 활동을 묻거든 고개를 들어 카드뉴스를 보게 하라. 홍보국은 매주 연겜에서 진행되는 활동을 카드뉴스로 제작하고 있습니다. 연겜의 얼굴을 빛내주세요!',
     color: '#F97316',
     dept: '홍보국',
+    image: 'images/pr/pr-1.webp',
   },
   {
     id: 10,
@@ -175,6 +184,7 @@ export const ACTIVITIES = [
       '평소 하고 싶었던 게임 이야기를 공유해보자! 게임과 관련된 주제를 선정하여 자유로운 형식으로 제작하는 매거진 활동을 진행하고 있습니다.',
     color: '#EF4444',
     dept: '홍보국',
+    image: 'images/pr/pr-2.webp',
   },
   {
     id: 11,
@@ -184,6 +194,7 @@ export const ACTIVITIES = [
       '포토샵을 처음 하신다고요? 그런 당신을 위해 준비했습니다! 매주 진행하는 포토샵 스터디를 통해 기본적인 기능을 배우고 나만의 디자인을 만들어보세요!',
     color: '#EC4899',
     dept: '홍보국',
+    image: 'images/pr/pr-3.webp',
   },
   {
     id: 12,
@@ -193,10 +204,12 @@ export const ACTIVITIES = [
       '영상 편집, 기초부터 실전 꿀팁까지 제대로 배우고 싶다면? 프리미어 프로 스터디에서 툴 마스터는 물론, 서로의 피드백을 통해 퀄리티 높은 나만의 포트폴리오를 완성해 보세요!',
     color: '#8B5CF6',
     dept: '미디어국',
+    image: 'images/media/media-1.webp',
   },
   {
     id: 13,
     title: '연겜소',
+    image: 'images/media/media-2.webp',
     category: 'departmental',
     description:
       '총 상금과 자존심을 건 쇼츠 조회수 대결! 팀원들과 함께 최신 게임 영상을 제작해 푸짐한 상품을 쟁취하세요. 1분 미만의 짧은 승부, 여러분의 기획력과 편집 센스를 보여줄 때입니다.',

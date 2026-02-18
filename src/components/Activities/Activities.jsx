@@ -63,8 +63,8 @@ function Activities() {
         </motion.div>
 
         {/* Card grid */}
-        <motion.div className={styles.grid} layout>
-          <AnimatePresence mode="popLayout">
+        <motion.div className={styles.grid}>
+          <AnimatePresence mode="sync">
             {filteredActivities.length > 0 ? (
               filteredActivities.map((activity) => (
                 <ActivityCard key={activity.id} activity={activity} />
