@@ -30,6 +30,7 @@ R&R(Role and Responsibilities)에 따른 팀 구성입니다.
 | **PM** | **임예찬** | [@Sagak-bit](https://github.com/Sagak-bit) | 프로젝트 총괄, 일정 관리, 기능 명세 확정 |
 | **FE** | [팀원명] | [@ID/EMAIL] | UI/UX 구현, React 컴포넌트 개발, 배포 |
 | **Design** | [팀원명] | [@ID/EMAIL] | 웹 디자인 시스템 구축, UI 프로토타이핑 |
+| **Design** | **신은아** | [@eunasin7](https://github.com/eunasin7) | 웹 디자인 시스템 구축, UI 프로토타이핑 |
 | **Content** | [팀원명] | [@ID/EMAIL] | 홍보 카피라이팅, 미디어 리소스 큐레이팅 |
 
 <br/>
